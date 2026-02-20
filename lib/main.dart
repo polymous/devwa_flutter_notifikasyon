@@ -52,7 +52,7 @@ class ApplicationPrincipale extends StatelessWidget {
       home: const EcranAccueil(),
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.orange),
         useMaterial3: true,
       ),
     );
@@ -216,7 +216,7 @@ class _EcranAccueilState extends State<EcranAccueil> {
       SnackBar(
         content: Text(message),
         duration: const Duration(seconds: 2),
-        backgroundColor: Colors.blue.shade700,
+        backgroundColor: Colors.orange.shade700,
       ),
     );
   }
@@ -238,21 +238,21 @@ class _EcranAccueilState extends State<EcranAccueil> {
               onPressed: onPressed,
               style: OutlinedButton.styleFrom(
                 side: BorderSide(
-                  color: estActif ? Colors.orange : Colors.black,
+                  color: estActif ? Colors.deepOrange : Colors.black,
                   width: 1.5,
                 ),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(12),
                 ),
                 backgroundColor: estActif
-                    ? Colors.orange.shade50
+                    ? Colors.deepOrange.shade50
                     : Colors.white,
               ),
               child: Text(
                 titre,
                 style: TextStyle(
                   fontSize: 16,
-                  color: estActif ? Colors.orange : Colors.black87,
+                  color: estActif ? Colors.deepOrange : Colors.black87,
                   fontWeight: FontWeight.w500,
                 ),
               ),
@@ -273,7 +273,7 @@ class _EcranAccueilState extends State<EcranAccueil> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.orange.shade700,
         title: const Text(
           "Notification Demo",
           style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
